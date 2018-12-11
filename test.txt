@@ -1,4 +1,0 @@
-GitKraken
-Clone test
-
-Push test
