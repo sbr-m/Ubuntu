@@ -1,12 +1,16 @@
 #!/bin/bash
 
-#15病待機
+#15秒待機
 sleep 15
 
 #conky起動
 /usr/bin/conky
 
+#パスワード要求
+printf "password: "
+read password
+
 #アップデート
-sudo apt update
+echo "$password" | sudo -S apt update
 sudo apt -y upgrade
 sudo apt -y dist-upgrade
